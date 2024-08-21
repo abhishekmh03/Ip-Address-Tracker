@@ -53,6 +53,12 @@ background-color: #1ab817;
 color: #fff; 
 border: 2px solid rebeccapurple;
 }
+.connector {
+  width: 100vw;
+  height: 2px;
+  background: linear-gradient(to right, red, blue);
+}
+
 
 .onward{
   z-index: 2 !important;
@@ -60,9 +66,10 @@ border: 2px solid rebeccapurple;
   width: 60vw;
   position: absolute;
   top: 30%;
-  background-color: rgb(240, 239, 239);
+  background-color: rgba(240, 239, 239, 0.8);
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 
 }
 .onward p{

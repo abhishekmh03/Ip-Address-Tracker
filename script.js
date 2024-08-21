@@ -1,4 +1,4 @@
-let BASE_URL = "https://geo.ipify.org/api/v2/country,city?apiKey=at_DhBKQawxlaahzhiKicY7hUOHYBv4a&ipAddress="
+let BASE_URL = "https://geo.ipify.org/api/v2/country,city?apiKey="your api key"&ipAddress="";
 let input = document.querySelector(".input");
 let btn = document.querySelector(".button");
 let ip_o = document.querySelector(".ip-address h4");
@@ -50,7 +50,7 @@ function update_data(data){
     let o_timezone = data.location.timezone;
     let o_isp = data.isp;
 
-    if(o_isp === ""){
+    if(o_ip === ""){
         alert("Please enter valid ip")
     }
     else{
@@ -62,11 +62,8 @@ function update_data(data){
 
     }
 
-
     update_map(data);
 }
-
-
 
 function update_map(data){
     console.log(data);
@@ -85,9 +82,8 @@ function update_map(data){
      marker = L.marker([lat,lng]).addTo(map1);
     
     marker.bindPopup(`<b>${o_city}</b><br>${o_region}`).openPopup();
-
    
-}
+};
 
 
 
